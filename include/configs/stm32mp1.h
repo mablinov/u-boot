@@ -144,8 +144,10 @@
   "setenv serverip 192.168.88.249;" \
   "tftp ${fdt_addr_r} stm32mp157c-dk2.dtb;" \
   "tftp ${loadaddr} zImage;" \
-  "setenv bootargs 'root=/dev/nfs nfsroot=192.168.88.249:/home/maxim/dev/buildroot/buildroot/output/images/nfsroot ip=dhcp;'" \
+  "setenv bootargs 'root=/dev/nfs nfsroot=192.168.88.249:/home/maxim/dev/buildroot/buildroot/output/images/nfsroot ip=dhcp';"
+  /*
   "bootz ${loadaddr} - ${fdt_addr_r};\0"
+  */
 
 #ifdef CONFIG_FASTBOOT_CMD_OEM_FORMAT
 /* eMMC default partitions for fastboot command: oem format */
