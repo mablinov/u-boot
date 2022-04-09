@@ -144,7 +144,7 @@
   "setenv serverip 192.168.88.249;" \
   "tftp ${fdt_addr_r} stm32mp157c-dk2.dtb;" \
   "tftp ${loadaddr} zImage;" \
-  "setenv bootargs 'root=/dev/nfs nfsroot=192.168.88.249:/home/maxim/dev/buildroot/buildroot/output/images/nfsroot ip=dhcp';"
+  "setenv bootargs 'root=/dev/nfs nfsroot=192.168.88.249:/home/maxim/dev/buildroot/buildroot/output/images/nfsroot ip=dhcp';\0"
   /*
   "bootz ${loadaddr} - ${fdt_addr_r};\0"
   */
